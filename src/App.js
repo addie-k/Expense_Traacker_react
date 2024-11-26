@@ -17,7 +17,7 @@ const reducer = (state, action) => {
         expenses: state.expenses.filter((expense) => expense.id !== payload.id),
       };
     }
-    //add logic for updating the expense here
+    //add logic for updating the expense here:
     case 'UPDATE_EXPENSE': {
       const updatedExpenses = state.expenses.map((expense) => {
         if (expense.id === payload.expense.id) {
